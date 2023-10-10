@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var numbers = [1, 2, 3];
+
+    var doubled = numbers.map(
+        function (number) {
+            return number * 2;
+        }
+    );
+
+    console.log(doubled)
+
+    let cars = [
+        { model: "Buick", price: 4000 },
+        { model: "Volvo", price: 8000 },
+        { model: "Mercedes", price: 12000 }
+    ];
+
+    let myCars = cars.map(
+        function (car) {
+            return "I have a " + car.model 
+        }
+    )
+
+    console.log(myCars)
+    console.log(myCars[0])
+    console.log(myCars[1])
+    console.log(myCars[2])
+</script>
+
+</html>
